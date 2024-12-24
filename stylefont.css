@@ -1,0 +1,134 @@
+/* font */
+@font-face {
+    font-family: 'WeddingBust'; /* Nama font */
+    src: url('font/WeddingBustleDemoRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WeddingBustb'; /* Nama font */
+    src: url('font/WeddingBustleDemoRegular.ttf') format('truetype'); /* Lokasi font */
+    font-weight: bold;
+    font-style: normal;
+}
+/* end font */
+.names {
+    font-family: 'WeddingBust',sans-serif;
+}
+
+/* cover */
+   /* General Reset */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    background-image: url('Content/asset/svg/bg\ back.svg');
+    background-repeat: 0;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-repeat: no-repeat; /* Menghindari gambar diulang */
+    font-family: 'Arial', sans-serif;
+
+}
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url('Content/asset/svg/bg\ back.svg'); /* Ganti dengan gambar untuk mobile */
+        background-size: cover; /* Gambar menutupi seluruh layar */
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+/* Cover Container */
+.cover {
+    border-radius: 200px;
+    padding: 30px;
+    width: 80%;
+    max-width: 400px;
+    height: 90vh;
+    max-height: 700px;
+    text-align: center;
+    position: fixed;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertikal ke tengah */
+    align-items: center;    /* Horizontal ke tengah */
+    gap: 20px; /* Jarak antar elemen */
+    background-image: url('Content/asset/svg/BG MOBILE.svg'); /* Ganti dengan path gambar yang diinginkan */
+    background-position: center; /* Menyusun gambar di tengah div */
+    background-size: cover;
+}
+
+.cover img{
+    width: 200px; /* Ukuran gambar */
+    height: auto; /* Agar proporsional */
+    margin-bottom: -150px; /* Spasi antara gambar dan teks */
+}
+ /* Names Style */
+ .names {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.719);
+}
+
+.names .dan {
+    font-size: 1.5rem; /* Smaller size for 'dan' */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.719);
+}
+
+/* Wedding Date */
+.date {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px rgba(22, 22, 22, 0.849);
+}
+
+/* kepada */
+.cover .kepada {
+    font-size: 1.2rem;
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px;
+    color: #ffffff;
+    margin-top: 10px;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(22, 22, 22, 0.849);
+    background-color: hsla(5, 58%, 57%, 0.548);
+
+    max-width: 250px;
+    max-height: 150px;
+    padding: 10px 20px;
+}
+
+/* Enter Button */
+.enter-button {
+    margin-top: 20px;
+}
+
+.enter-button button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #d15b51;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.enter-button button:hover {
+    background-color: #ffe2e0;
+}
+/* end cover  */

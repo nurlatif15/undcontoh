@@ -1,0 +1,97 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fcefee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.invitation-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.header p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #bfa580;
+    margin: 0;
+    font-weight: 500;
+}
+
+.header h1 {
+    font-family: 'Cursive', sans-serif;
+    font-size: 40px;
+    color: #b5855d;
+    margin: 10px 0 5px;
+}
+
+.header h1 span {
+    font-size: 35px;
+    color: #bfa580;
+}
+
+.subtext {
+    font-size: 14px;
+    color: #555555;
+    margin: 10px 0;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.details div {
+    text-align: center;
+    font-size: 14px;
+    color: #555555;
+}
+
+.details img {
+    width: 30px;
+    margin-bottom: 10px;
+}
+
+.rsvp {
+    font-size: 14px;
+    color: #bfa580;
+    margin: 20px 0 0;
+}
+
+.rsvp a {
+    color: #bfa580;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.flower-decor {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: url('flower.png') no-repeat center center/cover;
+    top: -20px;
+    left: -20px;
+}
+
+.flower-decor::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: url('flower.png') no-repeat center center/cover;
+    bottom: -20px;
+    right: -20px;
+    transform: rotate(180deg);
+}
